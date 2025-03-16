@@ -1,0 +1,36 @@
+### Hacer login y recuperar id de usuario
+POST http://localhost:1234/sesion
+Content-Type: application/json
+
+{
+  "email": "encriptado@test1.com",
+  "password": "Test1234"
+}
+
+
+### Recuperar un usuario con id
+GET http://localhost:1234/superhero/67d655b5afe035539ea9055c
+
+### Recuperar todos los usuarios
+GET http://localhost:1234/superhero/
+
+### Borrado logico un usuario por id
+DELETE http://localhost:1234/superhero/67d6545676325967af52f7e7
+
+### Crear un usuario
+POST http://localhost:1234/superhero
+Content-Type: application/json
+
+{
+  "nombre_original": "Juan Perez",
+  "alias": "encriptado395@test1.com"
+}
+
+### Actualizar usuario
+PATCH http://localhost:1234/superhero/67d655b5afe035539ea9055c
+Content-Type: application/json
+
+{
+  "alias": "123456"
+}
+
